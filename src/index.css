@@ -1,0 +1,590 @@
+:root {
+  --pureBlack:#131316;
+  --black: #1c1c21;
+  --ironBlack : #26262c;
+  
+  --darkGrey: #2f3037;
+  --grey: #393a41;
+  --lightGrey: #4b4c52;
+  --lighterGrey: #5b5c62;
+  --lLighterGrey: #6a6b70;
+}
+
+
+/* BACKGROUND COLOR */
+
+.bg-pureBlack {
+  background-color: var(--pureBlack);
+}
+
+
+
+
+
+
+
+* {
+  font-family: "Poppins", serif;
+  color: #e9e4e4 !important;
+}
+
+body {
+  background-color: var(--ironBlack);
+  overflow-x: hidden;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #e9e4e4;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.form {
+
+  position: relative;
+  
+}
+
+.form-control{
+  color: var(--pureBlack) !important;
+}
+
+ .form .bi-search {
+
+  position: absolute;
+  top: 52%;
+  right: 27.5%;
+  transform: translate(-50%, -50%) !important;
+  color: var(--pureBlack) !important;
+
+}
+
+.custom-width {
+  width: 50%;
+}
+
+.bg-darkGrey {
+  background-color: var(--darkGrey);
+}
+
+
+.dropdown-menu[data-bs-popper] {
+ 
+  left: -77px;
+ 
+}
+
+/* .navbar-expand .navbar-toggler {
+   display: block; 
+} */
+
+
+.game_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.card {
+  width: calc(25% - 20px) ;
+  transition: 0.2s ease-in-out;
+  max-height: fit-content;
+  position: relative;
+
+}
+
+.card:hover {
+  transform: scale(1.03);
+  z-index: 10;
+  
+}
+
+
+.card .card-extra-content {
+  display: none;
+  
+  position: absolute;
+  top: 93%;
+  left: 0px;
+  right: 0px;
+  bottom: auto;
+  background-color:var(--darkGrey);
+  z-index: 5;
+  overflow: hidden;
+}
+
+
+.card:hover .card-extra-content {
+  display: block;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.bg-darkGrey {
+  background-color: var(--darkGrey);
+}
+
+.bg-grey {
+  background-color: var(--grey);
+   
+}
+
+.w-30 {
+  width: 40%;
+}
+
+.fs-rating {
+  font-size: 12px;
+}
+
+.sidenav {
+
+  width: 160px;
+  /* background-color: var(--ironBlack); */
+  background-color: transparent;
+ 
+  
+}
+
+.sidenav a {
+  text-decoration: none;
+  display: block;
+
+}
+
+.p-sidebar {
+  padding: 6px 8px 6px 16px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+.page-item a:hover {
+
+  background-color: var(--lighterGrey);
+
+}
+
+.page-item a:focus {
+
+  background-color: var(--lighterGrey);
+
+}
+
+
+/* FORM SIGN IN */
+
+.form-signup {
+  display: flex;
+  flex-direction: column;
+  /* gap: 12px; */
+  width: clamp(60%, 90%, 500px);
+  background-color: var(--darkGrey);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: auto;
+}
+
+.form-signup .title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #e9e4e4;
+}
+
+.form-signup .message {
+  text-align: center;
+  font-size: 14px;
+  color: var(--lLighterGrey);
+}
+
+  label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--lLighterGrey);
+  font-size: 14px;
+}
+
+  input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--grey);
+  color: #e9e4e4;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-signup input::placeholder {
+  color: var(--lLighterGrey);
+}
+
+.form-signup input:focus {
+  border: 1px solid var(--lighterGrey);
+  background-color: var(--lightGrey);
+}
+
+ .submit {
+  background-color: var(--lighterGrey);
+  color: #e9e4e4;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background-color: var(--lLighterGrey);
+}
+
+.form-signup .signin {
+  text-align: center;
+  font-size: 14px;
+}
+
+.form-signup .signin a {
+  color: var(--lLighterGrey);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-signup .signin a:hover {
+  text-decoration: underline;
+}
+
+
+.p-toast {
+  width: 80% !important;
+}
+
+.liked {
+  color: red !important;
+}
+
+
+.overlay {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));  
+  z-index: -1; 
+}
+
+
+
+.form-signup textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--grey);
+  color: #e9e4e4;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+  min-height: 100px; 
+  resize: vertical; 
+}
+
+.form-signup textarea::placeholder {
+  color: var(--lLighterGrey);
+}
+
+.form-signup textarea:focus {
+  border: 1px solid var(--lighterGrey);
+  background-color: var(--lightGrey);
+}
+
+.fav-card {
+  width: 100%;
+  max-width: 300px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  background-color: var(--darkGrey);
+  position: relative;
+}
+
+.fav-card:hover {
+  transform: scale(1.03);
+  
+}
+
+.rev-card {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  background-color: var(--darkGrey);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 15px;
+  background-color: var(--darkGrey);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.chat-message {
+  background-color: var(--grey);
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  margin-bottom: 10px;  
+  border: 1px solid var(--lLighterGrey); 
+}
+
+
+.chat-messages {
+  height: 350px;
+  overflow-y: auto;
+  border-radius: 8px;
+  /* background-color: var(--black); */
+  padding: 12px;
+  color: #e9e4e4;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+  /* background-color: var(--grey); */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--lighterGrey);
+  border-radius: 8px;
+  background-color: var(--lightGrey);
+  color: #e9e4e4;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.chat-input::placeholder {
+  color: var(--lLighterGrey);
+}
+
+.chat-input:focus {
+  border: 1px solid var(--lLighterGrey);
+  background-color: var(--lighterGrey);
+}
+
+
+.chat-send-btn {
+  padding: 10px 15px;
+  background: #e63946;
+  color: #e9e4e4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.chat-send-btn:hover {
+  background: #d62839;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+}
+
+
+.file-input {
+  display: none;
+}
+
+
+.form-signup.account {
+  background-color: transparent;
+  justify-content: space-around;
+}
+
+.avatar-container{
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--grey);
+  color: #e9e4e4;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+  /* width: 228px; */
+  
+}
+
+/* .form-input {
+  width: 380px;
+  height: 65px;
+} */
+
+/* Bottone minimal per mobile */
+.filter-btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #333; /* Grigio scuro per un aspetto elegante */
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  color: #000; /* Leggermente più scuro al passaggio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */ 
+
+
+
+@media screen and (max-width: 1024px) {
+
+  
+.card {
+  
+  width: calc(50% - 20px) ;
+}
+
+}
+
+
+
+/*------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+  .custom-width {
+    width: 100%;
+}
+  
+.form .bi-search {
+    
+    top: 48%;
+    right: 2.5%;
+    
+}
+
+
+.card {
+  width: calc(50% - 20px) ;
+
+}
+
+.pos-mobile {
+  position: absolute;
+  top: 51px;
+  right: 7px;
+  list-style: none;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 0 0 
+}
+
+
+
+
+}
+
+
+
+
+
+/*------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+  .card {
+    width: 100%;
+  }
+
+
+
+}
