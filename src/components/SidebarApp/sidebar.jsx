@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import Genres from "./components/genres";
+import Genres from "./components/Genres";
 import Platforms from "./components/Platform";
 
 
