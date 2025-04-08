@@ -5,7 +5,7 @@ import supabase from "../../Supabase/Client";
 import SessionContext from "../../context/SessionContext";
 import { Toast } from 'primereact/toast';
 import { Avatar } from "@mui/material";
-import Genres from "../SidebarApp/components/genres";
+import Genres from "../SidebarApp/components/Genres";
 import Platforms from "../SidebarApp/components/Platform";
 import { Offcanvas } from 'bootstrap';
 
